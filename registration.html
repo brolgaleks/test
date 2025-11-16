@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решистрация в школу</title>
+</head>
+<body>
+    <h2>Регистрация в школу</h2>
+    <fieldset>
+        <legend>Личные данные</legend>
+        <label>Имя: <input type="text" name="name"></label> <br><br>
+        <label>Фамилия: <input type="text" name="firstname"></label> <br><br>
+        <label>Дата рождения: <input type="date" name="date"></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Школьные классы</legend>
+        <label><input type="radio" name="grade" value="one">1 класс</label>
+        <label><input type="radio" name="grade" value="two">2 класс</label>
+        <label><input type="radio" name="grade" value="three">3 класс</label>
+        <label><input type="radio" name="grade" value="tour">4 класс</label>
+        <label><input type="radio" name="grade" value="five">5 класс</label>
+        <label><input type="radio" name="grade" value="six">6 класс</label>
+        <label><input type="radio" name="grade" value="seven">7 класс</label>
+        <label><input type="radio" name="grade" value="eigth">8 класс</label>
+        <label><input type="radio" name="grade" value="nine">9 класс</label>
+        <label><input type="radio" name="grade" value="ten">10 класс</label>
+        <label><input type="radio" name="grade" value="eleven">11 класс</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Дополнительная информация</legend>
+        <label>Электронная почта: <input type="email"></label> <br><br>
+        <label>Телефон: <input type="tel"></label> <br><br>
+        <label>Адрес: <input type="text"></label> <br><br>
+
+        <label>Интересы:
+            <select name="interests">
+                <option value="" selected disabled>Выбрать</option>
+                <option value="sport">Спорт</option>
+                <option value="music">Музыка</option>
+                <option value="art">Искусство</option>
+            </select>
+        </label> <br><br>
+
+        <label>Комментарий <textarea name="comment"></textarea></label>
+    </fieldset>
+
+    <button type="submit">Зарегистрироваться</button>
+    <button type="reset">Очистить</button>
+
+    <script>
+        let i = 0;
+        do{
+            console.log(i);
+            i++
+        }while (i < 3);
+    </script>
+</body>
+</html>

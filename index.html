@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+</head>
+<body>
+    <h2>Информация о нас</h2>
+    <form>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label>Имя * <input type="text" name="name" required></label> <br> <br>
+            <label>Телефон <input type="tel" name="tel"></label> <br> <br>
+            <label>Email * <input type="email" name="email" required></label> <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <label>Возраст * <input type="number" name="age" required></label> <br> <br>
+            <label>Пол <select name="gender">
+                <option value="" selected disabled>Выберите пол</option>
+                <option value="woman">Женский</option>
+                <option value="man">Мужской</option>
+            </select></label> <br>
+            <label>Перечислите интересы <textarea name="interests"></textarea></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Время мероприятия</legend>
+            <label><input type="radio" name="time" value="morning">Утро</label>
+            <label><input type="radio" name="time" value="afternoon">День</label>
+            <label><input type="radio" name="time" value="evening">Вечер</label>
+        </fieldset>
+
+        <button type="submit">Отправить данные</button>
+        <button type="reset">Очистить данные </button>
+    </form>
+</body>
+</html>
